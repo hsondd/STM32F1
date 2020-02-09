@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"tmr1\startup_stm32f103xb.o"
+"tmr1\main.o"
+"tmr1\stm32f1xx_it.o"
+"tmr1\stm32f1xx_hal_msp.o"
+"tmr1\stm32f1xx_hal_gpio_ex.o"
+"tmr1\stm32f1xx_hal_tim.o"
+"tmr1\stm32f1xx_hal_tim_ex.o"
+"tmr1\stm32f1xx_hal.o"
+"tmr1\stm32f1xx_hal_rcc.o"
+"tmr1\stm32f1xx_hal_rcc_ex.o"
+"tmr1\stm32f1xx_hal_gpio.o"
+"tmr1\stm32f1xx_hal_dma.o"
+"tmr1\stm32f1xx_hal_cortex.o"
+"tmr1\stm32f1xx_hal_pwr.o"
+"tmr1\stm32f1xx_hal_flash.o"
+"tmr1\stm32f1xx_hal_flash_ex.o"
+"tmr1\stm32f1xx_hal_exti.o"
+"tmr1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TMR1\TMR1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TMR1.map" -o TMR1\TMR1.axf

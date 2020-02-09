@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"tmr1_pwm_1khz\startup_stm32f103xb.o"
+"tmr1_pwm_1khz\main.o"
+"tmr1_pwm_1khz\stm32f1xx_it.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_msp.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_gpio_ex.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_tim.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_tim_ex.o"
+"tmr1_pwm_1khz\stm32f1xx_hal.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_rcc.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_rcc_ex.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_gpio.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_dma.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_cortex.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_pwr.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_flash.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_flash_ex.o"
+"tmr1_pwm_1khz\stm32f1xx_hal_exti.o"
+"tmr1_pwm_1khz\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TMR1_PWM_1KHZ\TMR1_PWM_1KHZ.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TMR1_PWM_1KHZ.map" -o TMR1_PWM_1KHZ\TMR1_PWM_1KHZ.axf
